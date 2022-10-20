@@ -158,7 +158,7 @@ else if (mission == 9)
 else if (mission == 10)
 {
     Console.WriteLine("mission 10");
-    static int PairsChecker(int first, int second)
+    static int function(int first, int second)
     {
         if (first % second == 0)
         {
@@ -194,7 +194,7 @@ else if (mission == 10)
     Console.WriteLine("put second number: ");
     int Second = int.Parse(Console.ReadLine());
 
-    PairsChecker(first, Second);
+    function(first, Second);
 
 }
 else if (mission == 11)
@@ -205,8 +205,8 @@ else if (mission == 11)
 
        int Children = 0;
         int Teenagers = 0;
-        int guideForChildren = 0;
-       int guideForAdult = 0;
+        int childguide = 0;
+       int adultguide = 0;
         for (int i = 0; i < AmountOfKids; i++)
         {
             Console.WriteLine("Please enter an age: ");
@@ -220,15 +220,15 @@ else if (mission == 11)
                 Teenagers++;
             }
         }
-        guideForChildren = Children / 4;
-        guideForAdult = Teenagers / 7;
+        childguide = Children / 4;
+        adultguide = Teenagers / 7;
 
-        int reqGuideForChildren = 150 / 4;
-        int reqGuideForAdult = 150 / 7;
+        int reqchildguide = 150 / 4;
+        int reqadultguide = 150 / 7;
         Console.WriteLine($"There are {Children} kids in the age range of: 8-11");
         Console.WriteLine($"{Teenagers} kids in the age range of: 12-15");
-        Console.WriteLine($"{reqGuideForChildren - guideForChildren} guides required for children");
-        Console.WriteLine($"{reqGuideForAdult - guideForAdult} guides required for adults");
+        Console.WriteLine($"{reqchildguide - childguide} guides required for children");
+        Console.WriteLine($"{reqadultguide - adultguide} guides required for adults");
         return 0;
     }
 
@@ -240,9 +240,9 @@ else if (mission == 11)
 else if (mission == 12)
 {
     Console.WriteLine("mission 12");
-    int usernum = int.Parse(Console.ReadLine());
-    int x = usernum;
-    for (int i = 1; i < usernum; i++)
+    int num = int.Parse(Console.ReadLine());
+    int x = num;
+    for (int i = 1; i < num; i++)
     {
         x = x * i;
     }
